@@ -18,5 +18,4 @@ Network: 200 Mbps
 ## 5. Deliverables
 - Test Plan
 - Test Cases
-- Bug Report
 - Screenshots

@@ -1,0 +1,78 @@
+,Test Case Template for Project,,,,,
+,Project Name,Reddit Manual Testing,,,,
+,Module Name,"Authentication Module (login,signup)
+Post Management Module (create,
+edit, delete posts)
+Comment Module (add, edit, delete
+posts)
+Voting Module (upvotes, downvotes)",,,,
+,Created By ,Saurav Shrestha,,,,
+,Created Date,6th September,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+Test Case ID, Scenario Desciption,Preconditons,Steps to Execute,Expected Result,Actual Result,Status
+TC_001,Verify that user can log in with valid credentials.,User has a registered reddit account.,"1. Go to https://www.reddit.com/login 
+2. Enter valid username and password.
+3. Click Login.",User is redirected to the homepage.,User is redirected to the homepage.,Pass
+TC_002,Verify that user cannot log in with invalid credentials.,None,"1. Go to login page.
+2. Enter valid username and wrong
+    password.
+3. Click Login.","Error message incorrect username
+or password is displayed.","Error message invalid email or 
+password is displayed.",Pass
+TC_003,"Verify that a new user can sign up and create an account 
+successfully.",User does not have a reddit account. ,"1. Click Sign Up
+2. Enter email, username, password
+3. Complete Captcha
+4. Click Sign Up","Account is created and user is able
+to use reddit.","Account is created and user is 
+redirected to homepage.",Pass
+TC_004,"Verify that a logged-in user can create a text post in a 
+subreddit.",User is logged in. ,"1. Click ""Create Post""
+2. Select subreddit
+3. Enter title and text
+4. Click Post",Post appears in the subreddit page.,Post appeared in the subreddit page. ,Pass
+TC_005,Verify that a logged-in user can upvote a post.,User is logged in. ,"1. Open a post
+2. Click Upvote arrow","Post vote count increases and arrow
+is highlighted.","Post vote count increased and 
+upvote arrow highlighted red.",Pass
+TC_006,Verify that a logged-in user can downvote a post.,User is logged in. ,"1. Open a post
+2. Click Downvote arrow","Post vote count decreases and arrow
+is highlighted.","Post vote count decreased and 
+downvote arrow highlighted purple.",Pass
+TC_007,Verify that a logged-in user can add a comment to a post.,User is logged in. ,"1. Open a post
+2. Enter comment
+3. Click Comment",Comment appears under the post.,"Comment appeared successfully
+under the post.",Pass
+TC_008,Verify that a user can edit their own comment.,User has posted a comment.,"1. Click Edit on comment 
+ 2. Modify text 
+ 3. Save changes","Comment content is updated 
+successfully.",Comment updated successfully.,Pass
+TC_009,Verify that a user can delete their own comment.,User has posted a comment.,"1. Click Delete on comment
+2. Confirm deletion",Comment is removed from the post.,Comment deleted successfully.,Pass
+TC_010,Verify that search returns relevant subreddits and posts.,User is logged in. ,"1. Enter search term in search bar
+2. Press Enter","Relevant subreddits and posts are 
+displayed.",Relevant results displayed correctly.,Pass
+TC_011,Verify that a user can edit their profile details.,User is logged in. ,"1. Go to profile → Edit Profile
+2. Update bio or display name
+3. Save changes","Profile information is updated 
+successfully.","Profile updated and changes
+ reflected correctly.",Pass
+TC_012,Verify that a user can join a subreddit.,User is logged in. ,"1. Open subreddit
+2. Click Join",Subreddit is added to subscriptions.,User successfully joined subreddit.,Pass
+TC_013,Verify that a user can leave a subreddit.,User has joined a subreddit.,"1. Open subreddit
+2. Click Leave","Subreddit is removed from 
+subscriptions.",User successfully left subreddit.,Pass
+TC_014,Verify that a user can log out successfully.,User is logged in. ,1. Click username → Log Out,"User is logged out and redirected to 
+login page.","User logged out successfully; 
+login page displayed.",Pass
+TC_015,Verify that a user can upvote a comment.,User is logged in. ,"1. Open a post
+2. Click Upvote on a comment","Comment upvote count increases and
+ arrow is highlighted","Comment vote increased; arrow 
+highlighted.",Pass
+TC_016,Verify that a user can downvote a comment.,User is logged in.,"1. Open a post
+2. Click Downvote on a comment","Comment downvote count decreases 
+and arrow is highlighted.","Comment vote decreased; arrow 
+highlighted.",Pass
